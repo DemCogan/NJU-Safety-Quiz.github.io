@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Times New Roman", Times, serif;
+    box-sizing: border-box;
+}
+body {
+    background: #530053;
+}
+.app {
+    background: #fff;
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+}
+.app h1 {
+    font-size: 26px;
+    color: #530053;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+}
+.quiz {
+    padding: 20px 0;
+}
+.quiz h2 {
+    font-size: 18px;
+    color: #530053;
+    font-weight: 600;
+}
+#question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;      
+}
+.btn {
+    background: #fff;
+    font-size: 16px;
+    color: #222;
+    font-weight: 600;
+    width: 100%;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover:not([disabled]) {
+    background: #222;
+    color: #fff;
+}
+.btn:disabled {
+    cursor: no-drop;
+}
+#next-btn, #download-btn {
+    background: #530053;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 600;
+    width: 100%;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
+    display: none;
+}
+.correct {
+    background: #9aeabc !important;
+}
+.incorrect {
+    background: #ff9393 !important;
+}
+.nju-logo {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    height: 60px;
+}
+#question div {
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .app {
+        padding: 15px;
+        margin: 10px auto;
+    }
+    .app h1 {
+        font-size: 22px;
+        padding-bottom: 15px;
+    }
+    .quiz h2 {
+        font-size: 16px;
+    }
+    .btn {
+        font-size: 14px;
+        padding: 8px;
+    }
+    #next-btn, #download-btn {
+        font-size: 12px;
+    }
+    .nju-logo {
+        height: 50px;
+    }
+}
