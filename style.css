@@ -1,3 +1,4 @@
+/* Vorherige CSS-Regeln bleiben unverändert */
 * {
     margin: 0;
     padding: 0;
@@ -110,9 +111,9 @@ body {
     .nju-logo {
         height: 50px;
     }
-    /* Bildgröße bei den letzten vier Fragen verringern */
+    /* Bildgröße bei den letzten vier Fragen verringern und verschieben */
     .quiz img {
-        max-height: 40px;
-        margin-left: 10px;
+        max-height: 30px; /* Bildgröße verringern */
+        margin-left: 20px; /* Abstand links vergrößern */
     }
 }
