@@ -46,7 +46,7 @@ body {
     padding: 10px;
     margin: 10px 0;
     text-align: left;
-    border-radius: 4px;
+    border-radius: 8px; /* Abgerundete Ecken */
     cursor: pointer;
     transition: all 0.3s;
 }
@@ -109,5 +109,10 @@ body {
     }
     .nju-logo {
         height: 50px;
+    }
+    /* Bildgröße bei den letzten vier Fragen verringern */
+    .quiz img {
+        max-height: 40px;
+        margin-left: 10px;
     }
 }
